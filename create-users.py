@@ -66,7 +66,6 @@ def main():
         # or that it takes output of the echo send it as input of the passwd command
         cmd = "/bin/echo -ne '%s\n%s' | /usr/bin/sudo /usr/bin/passwd %s" % (password,password,username)
 
-        #REMOVE THIS COMMENT AFTER YOU UNDERSTAND WHAT TO DO - these statements are currently "commented out" as talked about in class
         #the system will run cmd to set passwords when uncommented.
         print(cmd)
         os.system(cmd)
