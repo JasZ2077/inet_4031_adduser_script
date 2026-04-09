@@ -11,7 +11,7 @@
   python3 create-users.py < create-users.input
 ```
 \
-or\
+or
 ```bash
    ./create-users.py < create-users.input
 ```
@@ -23,14 +23,17 @@ or\
  \ 
    Creates User\
    Creates Password\
-   Assigns Users to their assigned group.
-
+   Assigns Users to their assigned group.\
+   All of these will be done by given instruction below in the Details Section.
 ## Details about Self Creation of document:
- \
-   If you want to create a file, with .input ending, that it should strictly follow the fomrat of Username:Password:LastName:Firstname:GroupName1,GroupName2\
+ 
+   If you want to create a file, with .input ending, that it should strictly follow the format of Username:Password:LastName:Firstname:GroupName1,GroupName2\
    ...groupNamex. The number of colons has to be ** EXACLY 4 ** , otherwise it will fail to operate. Plus *every users should be separated by lines*.
 
 ## Verification
- \ Check it via grip command, and check your user in your directory:\
-   *grep -r user/etc/ *   \
-   Or if you have tput the user in a specific directory, try to locate them and recheck.
+   Check it via grip command, and check your user in your directory:\
+```bash
+   grep -r user/etc/
+```
+  
+   Or if you have to put the user in a specific directory, try to locate them and recheck.
